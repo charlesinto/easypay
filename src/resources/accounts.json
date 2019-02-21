@@ -1,0 +1,32 @@
+[
+    {
+        "accountid": 1,
+        "accountname": "Account 1",
+        "accountcode": ""
+    },
+    {
+        "accountid": 2,
+        "accountname": "Account 2",
+        "accountcode": ""
+    },
+    {
+        "accountid": 3,
+        "accountname": "Account 3",
+        "accountcode": ""
+    },
+    {
+        "accountid": 4,
+        "accountname": "Account 4",
+        "accountcode": ""
+    },
+    {
+        "accountid": 5,
+        "accountname": "Account 5",
+        "accountcode": ""
+    },
+    {
+        "accountid": 6,
+        "accountname": "Account 6",
+        "accountcode": ""
+    }
+]

@@ -1,0 +1,4 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('top-usdk-service-1.0.2.jar'))
+dependencies {
+}
