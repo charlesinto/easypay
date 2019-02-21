@@ -1,32 +1,39 @@
 [
     {
-        "accountid": 1,
-        "accountname": "Account 1",
-        "accountcode": ""
+        
+        "branchid": 1,
+        "branchname": "Account 1",
+        "branchcode": "NPL01",
+        "companycode":"NP001"
     },
     {
-        "accountid": 2,
-        "accountname": "Account 2",
-        "accountcode": ""
+        "branchid": 2,
+        "branchname": "Account 2",
+        "branchcode": "NPL01",
+        "companycode":"NP001"
     },
     {
-        "accountid": 3,
-        "accountname": "Account 3",
-        "accountcode": ""
+        "branchid": 3,
+        "branchname": "Account 3",
+        "branchcode": "NPL01",
+        "companycode":"NP001"
     },
     {
-        "accountid": 4,
-        "accountname": "Account 4",
-        "accountcode": ""
+        "branchid": 4,
+        "branchname": "Account 4",
+        "branchcode": "NPL01",
+        "companycode":"NP001"
     },
     {
-        "accountid": 5,
-        "accountname": "Account 5",
-        "accountcode": ""
+        "branchid": 5,
+        "branchname": "Account 5",
+        "branchcode": "NPL01",
+        "companycode":"NP001"
     },
     {
-        "accountid": 6,
-        "accountname": "Account 6",
-        "accountcode": ""
+        "branchid": 6,
+        "branchname": "Account 6",
+        "branchcode": "NPL01",
+        "companycode":"NP001"
     }
 ]

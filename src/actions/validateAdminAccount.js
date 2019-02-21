@@ -5,16 +5,19 @@ import {
  } from './types';
  import BranchController from '../controller/BranchController';
 
+ import accounts from '../resources/accounts.json';
+
  export const getBranches = () => {
      return (dispatch) => {
-        BranchController.getBranches()
-        .then((branches) => {
-            console.log('braches', branches);
-            dispatch({type: LOAD_RANCHES, payload: branches })
-        })
-        .catch((error) => {
-            console.log(error);
-        })
+        dispatch({type: LOAD_RANCHES, payload: accounts })
+        // BranchController.getBranches()
+        // .then((branches) => {
+        //     console.log('braches', branches);
+        //     dispatch({type: LOAD_RANCHES, payload: branches })
+        // })
+        // .catch((error) => {
+        //     console.log(error);
+        // })
      }
      
  }

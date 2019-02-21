@@ -9,22 +9,24 @@ import { validateAccount } from '.';
 export const authenticateUser = ({ email, password }) => {
     return (dispatch) => {
         dispatch({ type: LOADING, payload: { email, password } });
-        AuthController.handleUserLogin({email, password})
-                        .then(response => {
-                            console.log('response', response);
-                            if(response === 200){
+        dispatch({ type: LOGIN_USER_SUCCESS, payload: { email, password } });
+        Actions.main();
+        // AuthController.handleUserLogin({email, password})
+        //                 .then(response => {
+        //                     console.log('response', response);
+        //                     if(response === 200){
 
-                                dispatch({ type: LOGIN_USER_SUCCESS, payload: { email, password } });
-                                console.log('token', AsyncStorage.getItem('token'));
-                                Actions.main();
-                           }else{
-                                dispatch({ type: LOGIN_FAILED, payload: {}});
-                           }
-                        })
-                        .catch(error => {
-                            dispatch({ type: LOGIN_FAILED, payload: {}});
-                            console.log('error', error);
-                        })
+        //                         dispatch({ type: LOGIN_USER_SUCCESS, payload: { email, password } });
+        //                         console.log('token', AsyncStorage.getItem('token'));
+        //                         Actions.main();
+        //                    }else{
+        //                         dispatch({ type: LOGIN_FAILED, payload: {}});
+        //                    }
+        //                 })
+        //                 .catch(error => {
+        //                     dispatch({ type: LOGIN_FAILED, payload: {}});
+        //                     console.log('error', error);
+        //                 })
        
        
     };
